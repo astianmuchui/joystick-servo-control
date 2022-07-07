@@ -1,4 +1,4 @@
-#include <Servo.h>
+hi#include <Servo.h>
 int joy_pin = 2;
 int x;
 int y;
@@ -17,7 +17,7 @@ void loop(){
   // Serial.println(x);
   // Serial.println(y);
 
-  // Move motor 
+  // Move servo motor
   int val;
   val = map(y,0,1023,0,255);
   switch(y){
