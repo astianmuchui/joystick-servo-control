@@ -17,11 +17,14 @@ void loop(){
   // Serial.println(x);
   // Serial.println(y);
 
-  // Move servo motor
+  // Move motor 
   int val;
-  val = map(y,0,1023,0,255);
+  // Map analog values to angles which are writable to the servo
+  
+  val = map(y,0,1023,0,180);
   switch(y){
     case 512:
+      motor.write(0);
       break;
     default:
       motor.write(val);
