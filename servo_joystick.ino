@@ -1,5 +1,5 @@
 #include <Servo.h>
-
+// Declare variables
 int joy_pin = 2;
 int x;
 int y;
