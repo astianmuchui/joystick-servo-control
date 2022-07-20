@@ -5,7 +5,7 @@ int x;
 int y;
 int state;
 int motorpin = 10; 
-// obj
+// instantiate
 Servo motor;
 void setup(){
   pinMode(joy_pin, OUTPUT);
